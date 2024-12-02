@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "e956a2ba-2f2d-4e91-9659-519e8372e2d5",
+		"name": "Krypto porfolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39912840"
+	},
+	"item": [
+		{
+			"name": "Cryptos = Crypto list add Bitcoin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":1,\"name\":\"Bitcoin\",\"symbol\":\"BTC\",\"price\":91630.54,\"quantity\":300.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/bitcoin/work",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"bitcoin",
+						"work"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list add Ethereum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":2,\"name\":\"Ethereum\",\"symbol\":\"ETH\",\"price\":3325.28,\"quantity\":200.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/ethereum/work",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"ethereum",
+						"work"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list add Monero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":3,\"name\":\"Monero\",\"symbol\":\"XMR\",\"price\":160.69,\"quantity\":1600.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/monero/work",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"monero",
+						"work"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list all name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Řazení dle názvu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos?sort=name",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Řazení dle ceny",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos?sort=price",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "price"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Řazení dle množství",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos?sort=quantity",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "quantity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 1 aktualizace",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":1,\"name\":\"Bitcoin\",\"symbol\":\"BTC\",\"price\":91630.54,\"quantity\":300.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 2 aktualizace",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":2,\"name\":\"Ethereum\",\"symbol\":\"ETH\",\"price\":3325.28,\"quantity\":200.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto list ID 3 aktualizace",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"ID\":3,\"name\":\"Monero\",\"symbol\":\"XMR\",\"price\":160.69,\"quantity\":1600.0}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos = Crypto portfolio Value",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cryptos/porfolio-value",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cryptos",
+						"porfolio-value"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
