@@ -19,7 +19,7 @@ public class CryptoController {
 
     List<Crypto> cryptoData = new ArrayList<>();
 
-    @PostMapping("/cryptos/{crypto}/work")
+    @PostMapping("/cryptos")
     public ResponseEntity<String> addCryptoData(@RequestBody Crypto crypto) {
         cryptoData.add(crypto);
         return new ResponseEntity("Kryptoměna byla uložena", ACCEPTED);
