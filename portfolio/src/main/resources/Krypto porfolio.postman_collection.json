@@ -21,15 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/cryptos/bitcoin/work",
+					"raw": "localhost:8080/cryptos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"cryptos",
-						"bitcoin",
-						"work"
+						"cryptos"
 					]
 				}
 			},
@@ -50,15 +48,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/cryptos/ethereum/work",
+					"raw": "localhost:8080/cryptos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"cryptos",
-						"ethereum",
-						"work"
+						"cryptos"
 					]
 				}
 			},
@@ -79,15 +75,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/cryptos/monero/work",
+					"raw": "localhost:8080/cryptos",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"cryptos",
-						"monero",
-						"work"
+						"cryptos"
 					]
 				}
 			},
